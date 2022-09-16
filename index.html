@@ -6,62 +6,7 @@
 <meta name="description" content="Rock Paper Scissors utilizing JS">
 <meta name="author" content="Benjamin J McDaniel">
 
-<script>
 
-function getComputerChoice() {
-    //Create a variable for random number
-    let randomNumber = Math.random(2) * 100;
-
-    //create if statements for three equal, random ranges of values that return ROCK, PAPER, or SCISSORS
-
-    if (randomNumber < 33) {
-        return "Rock";
-    }
-    if (randomNumber > 66) {
-        return "Scissors";
-    }
-    else {
-        return "Paper";
-    }
-}
-
-
-function singleRound(playerSelection, computerSelection) {
-    
-    console.log(computerSelection)
-
-    if (playerSelection == "rock" && computerSelection == "Paper") {
-        return console.log("Paper beats Rock, you LOSE!")
-    }
-    if (playerSelection == "rock" && computerSelection == "Scissors") {
-        return console.log("Rock beats Scissor, you WIN!!")
-    }
-    if (playerSelection == "rock" && computerSelection == "Rock") {
-        return console.log("TIE, try again!")
-    }
-    if (playerSelection == "paper" && computerSelection == "Paper") {
-        return console.log("TIE, try again!")
-    }
-    if (playerSelection == "paper" && computerSelection == "Scissors") {
-        return console.log("Scissors beats Paper, you LOSE!")
-    }
-    if (playerSelection == "paper" && computerSelection == "Rock") {
-        return console.log("Paper beats Rock, you WIN!!")
-    }
-    if (playerSelection == "scissors" && computerSelection == "Paper") {
-        return console.log("Scissors beats Paper, you WIN!!")
-    }
-    if (playerSelection == "scissors" && computerSelection == "Scissors") {
-        return console.log("TIE, try again!")
-    }
-    if (playerSelection == "scissors" && computerSelection == "Rock") {
-        return console.log("Rock beats Scissors, you LOSE!")
-    }
-}
-
-
-
-</script>
 
 <title>JS Rock Paper Scissors</title>
 
@@ -69,4 +14,5 @@ function singleRound(playerSelection, computerSelection) {
 <body>
     <h1>JAVASCRIPT ROCK PAPER SCISSORS</h1>
 </body>
+<script type="text/javascript" src="./scripts.js"></script>
 </html>
