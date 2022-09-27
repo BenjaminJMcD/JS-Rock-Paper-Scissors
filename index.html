@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="description" content="Rock Paper Scissors utilizing JS">
-<meta name="author" content="Benjamin J McDaniel">
+    <meta charset="UTF-8">
+    <meta name="description" content="Rock Paper Scissors utilizing JS">
+    <meta name="author" content="Benjamin J McDaniel">
+    <link rel="stylesheet" href="styles.css">
 
 
-
-<title>JS Rock Paper Scissors</title>
+    <title>JS Rock Paper Scissors</title>
 
 </head>
+
 <body>
     <h1>JAVASCRIPT ROCK PAPER SCISSORS</h1>
+
+    <p id="runningScore"></p>
+
+    <p id="results"></p>
+
+    <button id="rockBtn">ROCK</button>
+
+    <button id="paperBtn">PAPER</button>
+
+    <button id="scissorsBtn">SCISSORS</button>
+
+    <div id="winnerComp" class="hidden">
+        <h2 class="winnerDeclaration">You lose....</h2>
+        <button class="restart">Play Again?</button>
+    </div>
+
+    <div id="winnerPlayer" class="hidden">
+        <h2 class="winnerDeclaration">You Won!</h2>
+        <button class="restart">Play Again?</button>
+    </div>
+
 </body>
-<script type="text/javascript" src="./scripts.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+
 </html>
