@@ -1,13 +1,49 @@
-/* body {
-    background-color: rgb(39,56,102);
+ body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 30%, rgba(48,50,127,1) 90%, rgb(69, 71, 129) 100%) no-repeat fixed center;
 }
 
 h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: orangered;
+    color: #a7663b;
+    font-size:38px;
+    text-align:center;
+    margin: 50px 0px 50px 0px;
+    
 }
- */
 
 .hidden {
     visibility: hidden;
+}
+
+button {
+    border:solid 10px;
+    border-radius: 10px;
+    background-color:#a7663b;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:120px;
+    width:200px;
+    font-size:24px;
+    font-weight:900;
+    margin-top:50px;
+
+}
+
+div.playBtns {
+    display:flex;
+    justify-content: space-around;
+}
+
+#runningScore, #results {
+    color:white;
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#final {
+    text-align:center;
+}
+
+h2 {
+    color: white;
 }

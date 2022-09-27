@@ -16,24 +16,21 @@
 <body>
     <h1>JAVASCRIPT ROCK PAPER SCISSORS</h1>
 
+    <p id="results"></p>
+    <br>
     <p id="runningScore"></p>
 
-    <p id="results"></p>
 
-    <button id="rockBtn">ROCK</button>
-
-    <button id="paperBtn">PAPER</button>
-
-    <button id="scissorsBtn">SCISSORS</button>
-
-    <div id="winnerComp" class="hidden">
-        <h2 class="winnerDeclaration">You lose....</h2>
-        <button class="restart">Play Again?</button>
+    <div class="playBtns">
+        <button id="rockBtn">ROCK</button>
+        <button id="paperBtn">PAPER</button>
+        <button id="scissorsBtn">SCISSORS</button>
     </div>
 
-    <div id="winnerPlayer" class="hidden">
-        <h2 class="winnerDeclaration">You Won!</h2>
-        <button class="restart">Play Again?</button>
+    <div id="final" class="hidden">
+        <h2 id="winGame">You Won!</h2>
+        <h2 id="loseGame">You lose....</h2>
+        <button id="restart">Play Again?</button>
     </div>
 
 </body>

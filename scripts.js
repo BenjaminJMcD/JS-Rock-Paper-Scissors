@@ -59,7 +59,7 @@ function singleRound(playerSelection, computerSelection) {
     results.classList.remove("hidden");
     runningScore.classList.remove("hidden");
 
-    results.textContent = `You chose: ${playerSelection}
+    results.textContent = `You chose: ${playerSelection}  
     Computer chose: ${computerSelection}`
     
     
@@ -82,39 +82,44 @@ function singleRound(playerSelection, computerSelection) {
 
 }
 
-const winnerComp = document.getElementById("winnerComp");
-const winnerPlayer = document.getElementById("winnerPlayer");
+const final = document.getElementById("final");
+const winGame = document.getElementById("winGame");
+const loseGame = document.getElementById("loseGame");
 
 function gameWinner() {
     if (computerWins == 5) {
-        winnerComp.classList.remove("hidden");
+        final.classList.remove("hidden");
+        winGame.classList.add("hidden");
     }
     if (playerWins == 5) {
-        winnerPlayer.classList.remove("hidden");
+        final.classList.remove("hidden");
+        loseGame.classList.add("hidden");
     }
 }
 
 function resetGame() {
     if (computerWins == 5) {
-        winnerComp.classList.add("hidden");
+        final.classList.add("hidden");
         results.classList.add("hidden");
         runningScore.classList.add("hidden");
+        winGame.classList.remove("hidden");
         computerWins = 0;
         playerWins = 0;
     }
     if (playerWins == 5) {
-        winnerPlayer.classList.add("hidden");
+        final.classList.add("hidden");
         results.classList.add("hidden");
         runningScore.classList.add("hidden");
+        loseGame.classList.remove("hidden");
         computerWins = 0;
         playerWins = 0;
     }
 }
 
-const restart = document.getElementsByClassName("restart");
+const restart = document.getElementById("restart");
 
-restart[0].addEventListener('click', resetGame);
-restart[1].addEventListener('click', resetGame);
+restart.addEventListener('click', resetGame);
+
 
 
 
