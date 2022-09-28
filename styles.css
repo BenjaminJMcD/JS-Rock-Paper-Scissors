@@ -17,8 +17,9 @@ h1 {
 }
 
 button {
-    border:solid 10px;
+    border:solid 10px black;
     border-radius: 10px;
+    color:black;
     background-color:#a7663b;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height:120px;
